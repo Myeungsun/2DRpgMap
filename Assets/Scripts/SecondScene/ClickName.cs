@@ -11,7 +11,7 @@ public class ClickName : MonoBehaviour
 
     public void StartGame()
         {
-            if (!string.IsNullOrEmpty(playerName) && playerName.Length >= 2 && playerName.Length <= 10)
+            if (!string.IsNullOrEmpty(playerName) && (playerName.Length >= 2 && playerName.Length <= 10))
             {
                     // 플레이어의 닉네임을 저장
                     PlayerPrefs.SetString("PlayerName", playerName);
